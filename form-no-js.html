@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+  <title>HW4 FORM NO JS</title>
+  <style>
+    body {
+    font-family: 'Jost', sans-serif;
+    color: #36454F;
+    }
+
+    nav a {
+    font-weight: bold;
+    color:inherit;
+    text-decoration: none;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      margin-right: 25vw;
+      margin-left: 1em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Main</a>
+      <b>|</b>
+      <a href="work.html">Work</a> 
+      <b>|</b>
+      <a href="contact.html">Contact</a>  
+    </nav>
+    <h2>Contact Me Here:</h2>
+  </header>
+
+  <main>
+    <form id="contact-form" action="https://httpbin.org/post" method="post">
+      <label for="name">
+        <p>Name:</p>
+        <input id="name" type="text" name="name" required minlength="0">
+      </label>
+
+      <label for="email">
+        <p>Email:</p>
+        <input id="email" type="email" name="email" required minlength="8">
+      </label>
+
+      <label for="message">
+        <p>Message:</p>
+        <textarea id="message" name="message" required maxlength="300"></textarea>
+      </label>
+
+      <br>
+      <input type="hidden" name="possible_bot" value="true">
+      <button type="submit">Send</button>
+      
+      <output id="error-output"></output>
+      <output id="info-output"></output>
+    </form>
+
+
+  </main>
+
+</body>

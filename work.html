@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Work | Ethan Cheng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Jost', sans-serif;
+      color: #36454F;
+    }
+
+    nav a,
+    #frn a {
+      font-weight: bold;
+      color:inherit;
+      text-decoration: none;
+    }
+
+    #work img {
+      width: 10vw;
+      margin-left: -0.5em;
+    }
+
+    #work {
+      line-height: 0.5;
+    }
+
+    /*Tablet dimensions*/
+    @media (max-width: 1024px) {
+      nav {
+        display:flex;
+        justify-content:flex-start;
+        gap:0.25rem;
+      }
+
+      header {
+        line-height: 2rem;
+      }
+            
+      header h1 {
+        font-size: 4em;
+      }
+
+      #frn h3,
+      #frn p {
+        margin-top: 0;
+        margin-bottom: 0.2em;
+        font-size:1.5em;
+      }
+
+      #work img {
+        width: 25vw;
+        margin-left: -0.5em;
+      }
+
+      #work {
+        line-height: 1.1;
+      }
+    }
+
+    /*Phone dimensions*/
+    @media (max-width: 480px) {
+      
+      nav {
+        display:flex;
+        justify-content:flex-start;
+        gap:0.25rem;
+      }
+
+      header {
+        line-height: 2rem;
+      }
+            
+      header h1 {
+        font-size: 4em;
+      }
+
+      #frn h3,
+      #frn p {
+        margin-top: 0;
+        margin-bottom: 0.1em;
+        font-size:1.5em;
+      }
+
+      #work {
+        line-height: 1.1;
+      }
+
+      #work img {
+        width: 85vw;
+        max-width: 100%;
+        height: auto;
+      } 
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+      <nav>
+        <a href="index.html">Main</a> 
+        <b>|</b>
+        <a href="contact.html">Contact</a> 
+      </nav>
+      <h1>My Work</h1>
+      <br>
+  </header>
+  <main>
+    <div id="work">
+      <section id="frn">
+        <h3>
+          <a href="https://apn0017.wixstudio.com/1543">FRN Website:</a>
+        </h3>
+        <a href="https://apn0017.wixstudio.com/1543">
+          <picture>
+            <!--mobile optimization-->
+            <source srcset="images/FoodRecoveryNetworkBagMobileAVIF.avif" media="(max-width: 480px)">
+            <!--Tablet and desktop image-->
+            <img src="images/FoodRecoveryNetworkBag.png" alt="FRN Graphic">
+          </picture>
+
+        </a>
+        <p>A website redesign project for UCSD's Food Recovery Network</p>
+      </section>
+    </div>
+  </main>
+
+</body>
