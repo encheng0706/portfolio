@@ -12,89 +12,21 @@
       color: #36454F;
     }
 
-    nav a,
-    #frn a {
+    nav a {
       font-weight: bold;
       color:inherit;
       text-decoration: none;
     }
 
-    #work img {
-      width: 10vw;
-      margin-left: -0.5em;
+    header {
+      line-height: 1rem;
+    }
+          
+    header h1 {
+      font-size: 2em;
     }
 
-    #work {
-      line-height: 0.5;
-    }
 
-    /*Tablet dimensions*/
-    @media (max-width: 1024px) {
-      nav {
-        display:flex;
-        justify-content:flex-start;
-        gap:0.25rem;
-      }
-
-      header {
-        line-height: 2rem;
-      }
-            
-      header h1 {
-        font-size: 4em;
-      }
-
-      #frn h3,
-      #frn p {
-        margin-top: 0;
-        margin-bottom: 0.2em;
-        font-size:1.5em;
-      }
-
-      #work img {
-        width: 25vw;
-        margin-left: -0.5em;
-      }
-
-      #work {
-        line-height: 1.1;
-      }
-    }
-
-    /*Phone dimensions*/
-    @media (max-width: 480px) {
-      
-      nav {
-        display:flex;
-        justify-content:flex-start;
-        gap:0.25rem;
-      }
-
-      header {
-        line-height: 2rem;
-      }
-            
-      header h1 {
-        font-size: 4em;
-      }
-
-      #frn h3,
-      #frn p {
-        margin-top: 0;
-        margin-bottom: 0.1em;
-        font-size:1.5em;
-      }
-
-      #work {
-        line-height: 1.1;
-      }
-
-      #work img {
-        width: 85vw;
-        max-width: 100%;
-        height: auto;
-      } 
-    }
 
   </style>
 </head>
@@ -110,23 +42,15 @@
       <br>
   </header>
   <main>
-    <div id="work">
-      <section id="frn">
-        <h3>
-          <a href="https://apn0017.wixstudio.com/1543">FRN Website:</a>
-        </h3>
-        <a href="https://apn0017.wixstudio.com/1543">
-          <picture>
-            <!--mobile optimization-->
-            <source srcset="images/FoodRecoveryNetworkBagMobileAVIF.avif" media="(max-width: 480px)">
-            <!--Tablet and desktop image-->
-            <img src="images/FoodRecoveryNetworkBag.png" alt="FRN Graphic">
-          </picture>
-
-        </a>
-        <p>A website redesign project for UCSD's Food Recovery Network</p>
-      </section>
-    </div>
+    <project-card
+      title="FRN Website"
+      image="images/FoodRecoveryNetworkBag.png"
+      alt="FRN Graphic"
+      description="A website redesign project for UCSD's Food Recovery Network"
+      link="https://apn0017.wixstudio.com/1543"
+    ></project-card>
+    <project-card></project-card>
   </main>
 
+  <script src="project-card.js"></script>
 </body>
