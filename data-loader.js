@@ -4,48 +4,46 @@ const projectCardLocalList = [
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
         description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543",
+        link:"https://apn0017.wixstudio.com/1543"
     },
     {
-        title: "FRN Website",
+        title: "This",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
-        description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543",
+        description:" ",
+        link:"https://apn0017.wixstudio.com/1543"
     },    
     {
-        title: "FRN Website",
+        title: "Is",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
-        description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543",
-    },
+        description:" ",
+        link:"https://apn0017.wixstudio.com/1543"
+    },    
     {
-        title: "FRN Website",
+        title: "From",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
-        description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543",
-    },
+        description:" ",
+        link:"https://apn0017.wixstudio.com/1543"
+    },    
     {
-        title: "FRN Website",
+        title: "Local",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
-        description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543",
-    },
+        description:" ",
+        link:"https://apn0017.wixstudio.com/1543"
+    },    
     {
-        title: "FRN Website",
+        title: "Storage",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
-        description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543",
-    }
+        description:" ",
+        link:"https://apn0017.wixstudio.com/1543"
+    }   
 ];
 
-if (!localStorage.getItem("projects")) {
-    localStorage.getItem("projects", JSON.stringify(projectCardLocalList));
-}
+localStorage.setItem("projects", JSON.stringify(projectCardLocalList));
 
 function loadLocalData() {
     const data = localStorage.getItem("projects");
@@ -67,11 +65,11 @@ async function loadRemoteData() {
 }
 
 function displayCards(projects) {
-    const container = document.getElementById("card-container");
+    const container = document.getElementById("project-cards-here");
 
     container.innerHTML = "";
 
-    projects.array.forEach(proj => {
+    projects.forEach(proj => {
         const card = document.createElement("project-card");
         card.setAttribute("title", proj.title);
         card.setAttribute("image", proj.image);
