@@ -12,6 +12,13 @@ const projectCardLocalList = [
         alt:"FRN Graphic",
         description:"A website redesign project for UCSD's Food Recovery Network",
         link:"https://apn0017.wixstudio.com/1543"
+    },
+    {
+        title: "3rd WIP AAAAAAAAAAAAAAAAAA",
+        image: "images/TeamAvailabilityShiftViewFinal.png",
+        alt:"Redesigned Example Interface",
+        description:"3rd card spacing test AAAAAAAAAAAAAAAAAA",
+        link:"https://encheng0706.github.io/cogs127caseStudy/"
     }
 ];
 
