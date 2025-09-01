@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -82,13 +82,17 @@
 
         links.forEach(link => {
             link.addEventListener('mouseenter', () => {
+                links.forEach(l => l.style.color = 'transparent');
+                link.style.color = '#982120';
                 h1.style.color = 'transparent';
             });
 
             link.addEventListener('mouseleave', () => {
+                links.forEach(l => l.style.color = '#36454F');
                 h1.style.color = '#36454F';
             });
         });
     </script>
-</body>
+</body> 
+<!--add sticky bottom bar contacts-->
 </html>
