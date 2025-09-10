@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Ethan Cheng | Work</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
-  <style>
+    <meta charset="utf-8">
+    <title>Ethan Cheng | Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+    <style>
     html, body {
-      font-family: 'Jost', sans-serif;
-      color: #36454F;
+        font-family: 'Jost', sans-serif;
+        color: #36454F;
     }
-    
+
     nav a {
-      font-weight: bold;
-      color:inherit;
-      text-decoration: none;
+        font-weight: bold;
+        color:inherit;
+        text-decoration: none;
     }
 
     header {
-      line-height: 1.5rem;
+        line-height: 1.5rem;
     }
 
     header h1 {
-      font-size: 2em;
+        font-size: 2em;
     }
 
     header h1, header nav {
@@ -42,12 +42,12 @@
     }
 
     #project-cards-here {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      padding: 1rem;
-      width: 80vw;
-      margin: 0 auto;
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 1rem;
+            width: 80vw;
+            margin: 0 auto;
     }
 
     @media (max-width:600px) {
@@ -57,28 +57,28 @@
     }
 
     project-card {
-      width: 100%;
-      max-width: 100%;
+        width: 100%;
+        max-width: 100%;
     }
 
-  </style>
+    </style>
 </head>
 
 <body>
-  <header>
-      <nav>
-        <a href="index.html">main</a> 
-        <b>.</b>
-        <a href="contact.html">contact</a> 
-      </nav>
-      <h1>My Work</h1>
-      <br>
-  </header>
-  <main>
-    <div id="project-cards-here"></div>
-  </main>
+    <header>
+        <nav>
+            <a href="index.html">main</a> 
+            <b>.</b>
+            <a href="index.html#contact" id="contact-link">contact</a> 
+        </nav>
+        <h1>My Work</h1>
+        <br>
+    </header>
+    <main>
+        <div id="project-cards-here"></div>
+    </main>
 
-  <script src="project-card.js"></script>
-  <script src="data-loader.js"></script>
+    <script src="project-card.js"></script>
+    <script src="data-loader.js"></script>
 </body>
 </html>

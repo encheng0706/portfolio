@@ -11,7 +11,27 @@
         html, body {
             font-family: 'Jost', sans-serif;
             color: #36454F;
+            height: 100%;
+            margin: 0;
+            scroll-behavior: smooth;
             overflow: hidden;
+        }
+
+        main {
+            scroll-snap-type: y mandatory;
+            height: 100dvh;
+            overflow-y: scroll;
+            
+            scrollbar-width: none;
+        }
+
+        main::-webkit-scrollbar {
+            display: none;
+        }
+
+        section {
+            height: 100dvh;
+            scroll-snap-align: start;
         }
 
         .main-content {
@@ -23,12 +43,12 @@
 
         .wrapper {
             width: 60vw;
-            text-align: left;
+            text-align: center;
         }
 
         .wrapper h1 {
             margin:0;
-            font-size: clamp(2rem, 12vw, 12rem);
+            font-size: clamp(2rem, 10vw, 12rem);
             white-space: nowrap;
             width: 100%;
             transition: color 0.2s;
@@ -39,7 +59,7 @@
         .wrapper nav {
             display: flex;
             justify-content: space-between;
-            margin: -1em 8vw;
+            margin: -1em 12vw;
             font-size: 4vw;
             z-index: 2;
         }
@@ -59,6 +79,29 @@
             color:transparent;
         }
 
+        .contact-page {
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        #contact a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #36454F;
+            transition: 0.2s;
+        }
+        #contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+        #contact-wrapper a:hover {
+            color: #982120;
+        }
+
     </style>
 </head>
 
@@ -69,29 +112,25 @@
                 <h1>Ethan Cheng</h1>
                 <nav>
                     <a href="work.html" id="work-link">work</a>
-                    <a href="contact.html" id="contact-link">contact</a>
+                    <a href="#contact" id="contact-link">contact</a>
                 </nav>                   
+            </div>
+        </section>
+        <section class="contact-page" id="contact">
+            <div id="contact-wrapper">
+                <a href="mailto:ethannc0706@gmail.com">ethannc0706@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ethancheng0706/">
+                    <img src="images/LI-In-Bug.png" alt="LinkedIn Link" style="width: 1em">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/encheng0706/portfolio">
+                    <img src="images/github-mark.png" alt="Github Repo Link" style="width: 1em">
+                    Github
+                </a>
             </div>
         </section>
     </main>
 
-    <script>
-        const h1 = document.querySelector('.wrapper h1');
-        const links = document.querySelectorAll('.wrapper nav a');
-
-        links.forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                links.forEach(l => l.style.color = 'transparent');
-                link.style.color = '#982120';
-                h1.style.color = 'transparent';
-            });
-
-            link.addEventListener('mouseleave', () => {
-                links.forEach(l => l.style.color = '#36454F');
-                h1.style.color = '#36454F';
-            });
-        });
-    </script>
+    <script src="index-interactions.js"></script>
 </body> 
-<!--add sticky bottom bar contacts-->
 </html>
