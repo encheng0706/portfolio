@@ -7,18 +7,19 @@ const projectCardLocalList = [
         link:"https://encheng0706.github.io/cogs127caseStudy/"
     },
     {
-        title: "FRN Website",
+        title: "FRN Website (WIP)",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
         description:"A website redesign project for UCSD's Food Recovery Network",
-        link:"https://apn0017.wixstudio.com/1543"
+        link:""
+        //https://apn0017.wixstudio.com/1543 <-quick school project for the class, Case Study formatting to come soon 
     },
     {
-        title: "3rd WIP AAAAAAAAAAAAAAAAAA",
-        image: "images/TeamAvailabilityShiftViewFinal.png",
-        alt:"Redesigned Example Interface",
-        description:"3rd card spacing test AAAAAAAAAAAAAAAAAA",
-        link:"https://encheng0706.github.io/cogs127caseStudy/"
+        title: "TankTinker (WIP)",
+        image: "images/titleImage2.png",
+        alt:"TankTinker Visualization Example in app",
+        description:"A design exercise for creating a competitor in online aquarium planning tools, focusing on a pain point of existing tools",
+        link:""
     }
 ];
 
