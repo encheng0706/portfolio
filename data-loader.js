@@ -10,16 +10,15 @@ const projectCardLocalList = [
         title: "FRN Website (WIP)",
         image: "images/FoodRecoveryNetworkBag.png",
         alt:"FRN Graphic",
-        description:"A website redesign project for UCSD's Food Recovery Network",
-        link:""
-        //https://apn0017.wixstudio.com/1543 <-quick school project for the class, Case Study formatting to come soon 
+        description:"A website redesign project for UCSD's Food Recovery Network (Currently linked: group-created Wix, formatting and Figma WIP)",
+        link:"https://apn0017.wixstudio.com/1543"
     },
     {
-        title: "TankTinker (WIP)",
+        title: "TankTinker",
         image: "images/titleImage2.png",
         alt:"TankTinker Visualization Example in app",
         description:"A design exercise for creating a competitor in online aquarium planning tools, focusing on a pain point of existing tools",
-        link:""
+        link:"https://encheng0706.github.io/tanktinker/"
     }
 ];
 
